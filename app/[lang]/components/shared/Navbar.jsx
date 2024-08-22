@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
-// import { IoCartOutline, IoSearchSharp  } from "react-icons/io5";
+import { IoCartOutline, IoSearchSharp  } from "react-icons/io5";
 
 const Navbar = ({lang}) => {
 //  const session = useSession()
@@ -32,31 +32,31 @@ const pathname = usePathname()
           <div className="flex items-center space-x-6">
             
               <Link
-              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}` ? 'active bg-cyan-200' : ''}`} href={`/${lang}/`}>Home
+              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}` ? 'active bg-primary' : ''}`} href={`/${lang}/`}>Home
                 
               </Link>
 
               <Link
-              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/about` ? 'active bg-cyan-200' : ''}`} href={`/${lang}/about`}>About
+              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/about` ? 'active bg-primary' : ''}`} href={`/${lang}/about`}>About
                 
               </Link>
               <Link
-              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/services` ? 'active bg-cyan-200' : ''}`} href={`/${lang}/services`}>Services
-                
-              </Link>
-
-              <Link
-              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/my-bookings` ? 'active bg-cyan-200' : ''}`} href={`/${lang}/my-bookings`}>MyBookings
+              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/services` ? 'active bg-primary' : ''}`} href={`/${lang}/services`}>Services
                 
               </Link>
 
               <Link
-              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/blog` ? 'active bg-cyan-200' : ''}`} href={`/${lang}/blog`}>Blog
+              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/my-bookings` ? 'active bg-primary' : ''}`} href={`/${lang}/my-bookings`}>MyBookings
                 
               </Link>
 
               <Link
-              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/contacts` ? 'active bg-cyan-200' : ''}`} href={`/${lang}/contacts`}>Contacts
+              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/blog` ? 'active bg-primary' : ''}`} href={`/${lang}/blog`}>Blog
+                
+              </Link>
+
+              <Link
+              className= {`font-semibold hover:text-primary duration-300 ${pathname === `/${lang}/contacts` ? 'active bg-primary' : ''}`} href={`/${lang}/contacts`}>Contacts
                 
               </Link>
           
@@ -64,8 +64,8 @@ const pathname = usePathname()
         </div>
         <div className="navbar-end">
           <div className="flex space-x-3 items-center">
-          {/* <IoCartOutline className="text-xl"/>
-          <IoSearchSharp className="text-xl"/> */}
+          <IoCartOutline className="text-xl"/>
+          <IoSearchSharp className="text-xl"/>
           <a className="btn btn-outline btn-primary px-8">Appointment</a>
           {/* <div>
             <Image alt={session?.data?.user?.name} src={session?.data?.user?.image} height={50} width={50} className="rounded-full"/>
@@ -79,7 +79,7 @@ const pathname = usePathname()
           { session?.status === 'authenticated' &&
             <button className="btn btn-outline btn-ghost px-8" onClick={() => signOut()}>Logout</button>
             } */}
-            <select className="bg-red-600" value={lang} onChange={handleLanguageChange}>
+            <select className="bg-primary" value={lang} onChange={handleLanguageChange}>
              <option   value="en">EN</option>
              <option value="bn">BN</option>
     </select>

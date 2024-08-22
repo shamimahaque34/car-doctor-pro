@@ -1,11 +1,13 @@
 "use client"
-// import { signOut, useSession } from "next-auth/react";
+
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { IoCartOutline, IoSearchSharp  } from "react-icons/io5";
+// import { signOut, useSession } from "next-auth/react";
+import logoImage from "../../../../public/assets/logo.svg"
 
 const Navbar = ({lang}) => {
 //  const session = useSession()
@@ -25,7 +27,7 @@ const pathname = usePathname()
       <div className="navbar container mx-auto">
         <div className="navbar-start">
           <Link href={`/${lang}/`}>
-            <Image alt="logo" src="../assets/logo.svg" height={60} width={100} />
+            <Image alt="logo" src={logoImage} height={60} width={100} />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

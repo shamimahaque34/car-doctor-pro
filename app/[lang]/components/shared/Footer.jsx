@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import logoImage from "../../../../public/assets/logo.svg"
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <footer className="footer text-base-content container mx-auto">
       <aside>
         <Link href={"/"}>
-          <Image alt="logo" src="assets/logo.svg" height={60} width={100} />
+          <Image alt="logo" src={logoImage} height={60} width={100} />
         </Link>
       </aside>
       <nav>

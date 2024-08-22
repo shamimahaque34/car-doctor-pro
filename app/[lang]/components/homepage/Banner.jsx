@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Banner = () => {
   return (
     <div className="container mx-auto text-white">
@@ -38,28 +39,28 @@ const Banner = () => {
 
 const banners = [
   {
-    title: "Affordable Price For Car Servicing",
+    title: "Affordable Price For Car Servicing 1",
     description:
       "There are many variations of passages of  available, but the majority have suffered alteration in some form",
     next: "#slide2",
     prev: "#slide4",
   },
   {
-    title: "Affordable Price For Car Servicing",
+    title: "Affordable Price For Car Servicing 2",
     description:
       "There are many variations of passages of  available, but the majority have suffered alteration in some form",
     next: "#slide3",
     prev: "#slide1",
   },
   {
-    title: "Affordable Price For Car Servicing",
+    title: "Affordable Price For Car Servicing 3",
     description:
       "There are many variations of passages of  available, but the majority have suffered alteration in some form",
     next: "#slide4",
     prev: "#slide2",
   },
   {
-    title: "Affordable Price For Car Servicing",
+    title: "Affordable Price For Car Servicing 4",
     description:
       "There are many variations of passages of  available, but the majority have suffered alteration in some form",
     next: "#slide1",
